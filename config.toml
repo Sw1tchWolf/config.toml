@@ -1,0 +1,250 @@
+main.name = "Whatever_You_Want"
+main.lang = "en"
+main.whitelist = [ "MAYBE_YOUR_SSID",]
+main.plugins.grid.enabled = true
+main.plugins.grid.report = true
+main.plugins.grid.exclude = [ "MAYBE_YOUR_SSID",]
+
+main.plugins.memtemp.enabled = false
+main.plugins.memtemp.orientation = "horizontal"
+main.plugins.memtemp.scale = "celsius"
+
+main.plugins.wpa-sec.enabled = true
+main.plugins.wpa-sec.api_key = "YOUR_API_KEY"
+main.plugins.wpa-sec.api_url = "https://wpa-sec.stanev.org"
+main.plugins.wpa-sec.download_results = true
+main.plugins.wpa-sec.whitelist = []
+
+main.plugins.onlinehashcrack.enabled = true
+main.plugins.onlinehashcrack.email = "."
+main.plugins.onlinehashcrack.dashboard = ""
+main.plugins.onlinehashcrack.single_files = false
+main.plugins.onlinehashcrack.whitelist = []
+
+main.plugins.bt-tether.enabled = false
+main.plugins.bt-tether.devices.ios-phone.enabled = true
+main.plugins.bt-tether.devices.ios-phone.search_order = 1
+main.plugins.bt-tether.devices.ios-phone.mac = ""
+main.plugins.bt-tether.devices.ios-phone.ip = "172.20.10.6"
+main.plugins.bt-tether.devices.ios-phone.netmask = 24
+main.plugins.bt-tether.devices.ios-phone.interval = 1
+main.plugins.bt-tether.devices.ios-phone.scantime = 15
+main.plugins.bt-tether.devices.ios-phone.share_internet = true
+main.plugins.bt-tether.devices.ios-phone.priority = 99
+main.plugins.bt-tether.devices.ios-phone.max_tries = 0
+
+main.plugins.bt-tether.devices.android-phone.enabled = false
+main.plugins.bt-tether.devices.android-phone.search_order = 1
+main.plugins.bt-tether.devices.android-phone.mac = ""
+main.plugins.bt-tether.devices.android-phone.ip = "192.168.44.44"
+main.plugins.bt-tether.devices.android-phone.netmask = 24
+main.plugins.bt-tether.devices.android-phone.interval = 1
+main.plugins.bt-tether.devices.android-phone.scantime = 10
+main.plugins.bt-tether.devices.android-phone.max_tries = 10
+main.plugins.bt-tether.devices.android-phone.share_internet = false
+main.plugins.bt-tether.devices.android-phone.priority = 1
+
+main.plugins.bt-tether.macbook.enabled = true
+
+main.plugins.auto-update.enabled = true
+main.plugins.auto-update.install = true
+main.plugins.auto-update.interval = 1
+
+main.plugins.net-pos.enabled = false
+main.plugins.net-pos.api_key = "test"
+
+main.plugins.gps.enabled = false
+main.plugins.gps.speed = 19200
+main.plugins.gps.device = "/dev/ttyUSB0"
+
+main.plugins.webgpsmap.enabled = false
+
+main.plugins.wigle.enabled = true
+main.plugins.wigle.api_key = ""
+main.plugins.wigle.whitelist = []
+
+main.plugins.paw-gps.enabled = false
+main.plugins.paw-gps.ip = ""
+
+main.plugins.gpio_buttons.enabled = false
+
+main.plugins.led.enabled = true
+main.plugins.led.led = 0
+main.plugins.led.delay = 200
+main.plugins.led.patterns.loaded = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.updating = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.unread_inbox = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.ready = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.ai_ready = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.ai_training_start = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.ai_best_reward = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.ai_worst_reward = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.bored = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.sad = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.excited = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.lonely = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.rebooting = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.wait = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.sleep = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.wifi_update = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.association = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.deauthentication = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.handshake = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.epoch = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.peer_detected = "oo  oo  oo oo  oo  oo  oo"
+main.plugins.led.patterns.peer_lost = "oo  oo  oo oo  oo  oo  oo"
+
+main.plugins.logtail.enabled = true
+main.plugins.logtail.max-lines = 10000
+
+main.plugins.session-stats.enabled = true
+main.plugins.session-stats.save_directory = "/var/tmp/pwnagotchi/sessions/"
+
+main.plugins.deauth.enabled = true
+
+main.plugins.webcfg.enabled = true
+
+main.plugins.aircrackonly.face = "(>.<)"
+main.plugins.aircrackonly.enabled = true
+
+main.plugins.telegram.enabled = false
+main.plugins.telegram.bot_token = ""
+main.plugins.telegram.bot_name = "pawned"
+main.plugins.telegram.send_picture = true
+main.plugins.telegram.send_message = true
+
+main.plugins.screen_refresh.enabled = false
+main.plugins.screen_refresh.refresh_interval = 20
+
+main.custom_plugin_repos = [
+ "https://github.com/evilsocket/pwnagotchi-plugins-contrib/archive/master.zip",
+ "https://github.com/dadav/pwnagotchi-custom-plugins/archive/master.zip",
+]
+main.confd = "/etc/pwnagotchi/conf.d/"
+main.custom_plugins = "/usr/local/share/pwnagotchi/installed-plugins/"
+main.iface = "mon0"
+main.mon_start_cmd = "/usr/bin/monstart"
+main.mon_stop_cmd = "/usr/bin/monstop"
+main.mon_max_blind_epochs = 50
+main.no_restart = false
+main.filter = ""
+main.log.path = "/var/log/pwnagotchi.log"
+main.log.rotation.enabled = true
+main.log.rotation.size = "10M"
+
+ui.web.enabled = true
+ui.web.address = "0.0.0.0"
+ui.web.username = "USERNAME"
+ui.web.password = "PASSWORD"
+ui.web.port = 8080
+ui.web.on_frame = ""
+ui.web.origin = ""
+
+ui.display.enabled = true
+ui.display.type = "waveshare_2"
+ui.display.color = "black"
+ui.display.rotation = 180
+
+ui.fps = 0.0
+ui.font.name = "DejaVuSansMono"
+ui.font.size_offset = 0
+
+ui.faces.look_r = "( ⚆_⚆)"
+ui.faces.look_l = "(☉_☉ )"
+ui.faces.look_r_happy = "( ◕‿◕)"
+ui.faces.look_l_happy = "(◕‿◕ )"
+ui.faces.sleep = "(⇀‿‿↼)"
+ui.faces.sleep2 = "(≖‿‿≖)"
+ui.faces.awake = "(◕‿‿◕)"
+ui.faces.bored = "(-__-)"
+ui.faces.intense = "(°▃▃°)"
+ui.faces.cool = "(⌐■_■)"
+ui.faces.happy = "(•‿‿•)"
+ui.faces.excited = "(ᵔ◡◡ᵔ)"
+ui.faces.grateful = "(^‿‿^)"
+ui.faces.motivated = "(☼‿‿☼)"
+ui.faces.demotivated = "(≖__≖)"
+ui.faces.smart = "(✜‿‿✜)"
+ui.faces.lonely = "(ب__ب)"
+ui.faces.sad = "(╥☁╥ )"
+ui.faces.angry = "(-_-')"
+ui.faces.friend = "(♥‿‿♥)"
+ui.faces.broken = "(☓‿‿☓)"
+ui.faces.debug = "(#__#)"
+
+ai.enabled = true
+ai.path = "/root/brain.nn"
+ai.laziness = 0.1
+ai.epochs_per_episode = 50
+ai.params.gamma = 0.99
+ai.params.n_steps = 1
+ai.params.vf_coef = 0.25
+ai.params.ent_coef = 0.01
+ai.params.max_grad_norm = 0.5
+ai.params.learning_rate = 0.001
+ai.params.alpha = 0.99
+ai.params.epsilon = 1e-5
+ai.params.verbose = 1
+ai.params.lr_schedule = "constant"
+
+personality.advertise = true
+personality.deauth = true
+personality.associate = true
+personality.channels = [
+ 1,
+ 3,
+ 4,
+ 8,
+ 10,
+ 11,
+]
+personality.min_rssi = -87
+personality.ap_ttl = 47
+personality.sta_ttl = 86
+personality.recon_time = 10
+personality.max_inactive_scale = 7
+personality.recon_inactive_multiplier = 2
+personality.hop_recon_time = 43
+personality.min_recon_time = 6
+personality.max_interactions = 13
+personality.max_misses_for_recon = 6
+personality.excited_num_epochs = 28
+personality.bored_num_epochs = 17
+personality.sad_num_epochs = 21
+personality.bond_encounters_factor = 20000
+
+bettercap.scheme = "http"
+bettercap.hostname = "localhost"
+bettercap.port = 8081
+bettercap.username = "pwnagotchi"
+bettercap.password = "pwnagotchi"
+bettercap.handshakes = "/root/handshakes"
+bettercap.silence = [
+ "ble.device.new",
+ "ble.device.lost",
+ "ble.device.disconnected",
+ "ble.device.connected",
+ "ble.device.service.discovered",
+ "ble.device.characteristic.discovered",
+ "wifi.client.new",
+ "wifi.client.lost",
+ "wifi.client.probe",
+ "wifi.ap.new",
+ "wifi.ap.lost",
+ "mod.started",
+]
+
+fs.memory.enabled = true
+fs.memory.mounts.log.enabled = true
+fs.memory.mounts.log.mount = "/var/log"
+fs.memory.mounts.log.size = "50M"
+fs.memory.mounts.log.sync = 60
+fs.memory.mounts.log.zram = true
+fs.memory.mounts.log.rsync = true
+
+fs.memory.mounts.data.enabled = true
+fs.memory.mounts.data.mount = "/var/tmp/pwnagotchi"
+fs.memory.mounts.data.size = "10M"
+fs.memory.mounts.data.sync = 3600
+fs.memory.mounts.data.zram = true
+fs.memory.mounts.data.rsync = true
